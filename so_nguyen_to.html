@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function prime() {
+        let n = +prompt("nhapN");
+        let i = 2;
+        while (i < n) {
+            if (n % i == 0) {
+                alert(n + " ko la so nguyen to")
+                return;
+            } else {
+                i++;
+            }
+        }
+        alert(n + "la so nguyen to")
+    }
+
+    prime()
+</script>
+</body>
+</html>

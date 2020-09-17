@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhtong() {
+        let num = +prompt("nhap vao so luong so can tinh");
+        let total = 0;
+        let count = 1;
+        for (let a = 0; count <= num; a++) {
+            if (a % 7 === 0) {
+                total += a;
+                count++;
+            }
+
+        }
+        alert(total);
+    }
+
+    tinhtong()
+</script>
+</body>
+</html>

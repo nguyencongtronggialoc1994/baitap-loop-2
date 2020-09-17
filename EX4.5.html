@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonacci() {
+        let num = +prompt("nhap so luong so can tinh tong");
+        let a = 0;
+        let b = 1;
+        let count = 2;
+        let total = 0;
+        while (count <= num){
+           let nextnum = a + b;
+            total += nextnum;
+            a = b;
+            b = nextnum;
+            count ++
+        }
+         alert(total);
+        // for (; count < num; count++) {
+        //     let nextnum = a + b;
+        //     total += nextnum;
+        //     a = b;
+        //     b = nextnum;
+        // }
+        // alert(total);
+    }
+
+    fibonacci()
+</script>
+</body>
+</html>
