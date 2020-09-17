@@ -6,21 +6,36 @@
 </head>
 <body>
 <script>
-    function prime() {
-        let n = +prompt("nhapN");
-        let i = 2;
-        while (i < n) {
-            if (n % i == 0) {
-                alert(n + " ko la so nguyen to")
-                return;
-            } else {
-                i++;
+
+    function isPrime(num){
+        if(num < 2) return false;
+        if(num === 2) return true;
+        for (let i = 2; i < num; i++) {
+            if(num%i === 0){
+                return false;
             }
         }
-        alert(n + "la so nguyen to")
+        return true;
     }
 
-    prime()
+    function listPrime2(){
+        let number = +prompt("Nhap so luong so nguyen to: ");
+        let count = 0;
+        let n = 0;
+        let str = "";
+        while (count < number){
+            if(isPrime(n)){
+                str += ","+n;
+                count++;
+            }
+            n++;
+        }
+
+        document.write(str);
+    }
+
+    listPrime2();
+
 </script>
 </body>
 </html>
